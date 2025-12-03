@@ -1,0 +1,85 @@
+.side-menu-wrapper { 
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.01);
+    pointer-events: none;
+}
+
+.side-menu {
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 20%;
+    background-color: #e0f7fa;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    pointer-events: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+.side-menu ul {
+    /* list-style-type: none; */
+    padding: 0;
+    margin-top: 130px;
+    font-size: 16px;
+    color: #1f78b3;
+    font-weight: bold;
+    pointer-events: none;
+    direction: ltr;
+}
+
+.side-menu li {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: black;
+    pointer-events: auto;
+}
+
+.side-menu li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+}
+
+.linkActive {
+    /* text-shadow: 0 0 10px #fa5555, 0 0 20px #fa5555, 0 0 30px #fa5555; */
+    text-shadow: 0 0 10px #006600, 0 0 20px #006600, 0 0 30px #006600;
+}
+.side-menu .prichinySmerti{
+    margin-top: 0px;
+    /* list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    color: #1f78b3;
+    font-weight: bold;
+    direction: ltr;
+    cursor: pointer; */
+}
+
+.vnutr {
+    /* list-style-type: none; */
+    padding: 0;
+    margin-top: 130px;
+    font-size: 16px;
+    color: #1f78b3;
+    font-weight: bold;
+    direction: ltr;
+    cursor: pointer;
+}
+.smertj {
+    margin-top: 40px;
+    /* list-style-type: none; */
+    padding: 0;
+    font-size: 16px;
+    color: #1f78b3;
+    font-weight: bold;
+    direction: ltr;
+    cursor: pointer;  
+}

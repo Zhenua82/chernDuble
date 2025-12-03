@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Редирект с главной страницы на /homeDuble с кодом 301
+  RewriteCond %{HTTP_HOST} ^constructor-sme.ru$ [NC]
+  RewriteRule ^$ https://constructor-sme.ru/homeDuble [L,R=301]
+
+  # Отключение кэширования для маршрута /
+  <IfModule mod_headers.c>
+    <FilesMatch "^$">
+      Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+      Header set Pragma "no-cache"
+      Header set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+    </FilesMatch>
+  </IfModule>
+
+  # Обеспечение корректной обработки маршрутов React (SPA)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule ^(.*)$ /index.html [L]
+
+</IfModule>
