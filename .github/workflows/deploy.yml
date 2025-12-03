@@ -2,7 +2,7 @@ name: Deploy React App (CRA) to GitHub Pages
 
 on:
   push:
-    branches: [ master ]   # измени если твоя ветка другая
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -15,21 +15,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm ci
 
-      - name: Build project
-        run: npm run build
+      - name: Build with CRA (disable CI mode)
+        run: CI=false npm run build
 
-      - name: Upload build artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
@@ -37,11 +37,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
-        id: deploy
+      - name: Deploy
         uses: actions/deploy-pages@v4
