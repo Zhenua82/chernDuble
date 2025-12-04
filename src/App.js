@@ -212,148 +212,148 @@ const App = () => {
   function onChangeData(dataForm){
     // console.log(dataForm)
     if (dataForm.diagnoz ==='отравление нефтепродуктами' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/otravlenieNeftM')
+      history.push('/otravlenieNeftM')
     }
     else if (dataForm.diagnoz ==='отравление нефтепродуктами' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/otravlenieNeftF')
+      history.push('/otravlenieNeftF')
     }
     else if (dataForm.diagnoz ==='отравление бутиролактоном' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/otravlenieButirolactonM')
+      history.push('/otravlenieButirolactonM')
     }
     else if (dataForm.diagnoz ==='отравление бутиролактоном' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/otravlenieButirolactonF')
+      history.push('/otravlenieButirolactonF')
     } 
     else if (dataForm.diagnoz ==='отравление этиленгликолем' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/otravlenieEtilenglicoljM')
+      history.push('/otravlenieEtilenglicoljM')
     } 
     else if (dataForm.diagnoz ==='отравление этиленгликолем' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/otravlenieEtilenglicoljF')
+      history.push('/otravlenieEtilenglicoljF')
     }   
     else if (dataForm.diagnoz ==='ИБС Внезапная коронарная смерть' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/ibsVksF')
+      history.push('/ibsVksF')
     }
     else if (dataForm.diagnoz ==='ИБС Внезапная коронарная смерть' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/ibsVksM')
+      history.push('/ibsVksM')
     }
     else if (dataForm.diagnoz ==='ишемический инсульт ГМ' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/ishimInsultM')
+      history.push('/ishimInsultM')
     }
     else if (dataForm.diagnoz ==='ишемический инсульт ГМ' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/ishimInsultF')
+      history.push('/ishimInsultF')
     }
     else if (dataForm.diagnoz ==='повешение' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/poveshеnieM')
+      history.push('/poveshеnieM')
     }
     else if (dataForm.diagnoz ==='повешение' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/poveshеnieF')
+      history.push('/poveshеnieF')
     }
     else if (dataForm.diagnoz ==='ЧМТ' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/chmtM')
+      history.push('/chmtM')
     }
     else if (dataForm.diagnoz ==='ЧМТ' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/chmtF')
+      history.push('/chmtF')
     }
     else if (dataForm.diagnoz ==='поражение техническим электричеством' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/electroM')
+      history.push('/electroM')
     }
     else if (dataForm.diagnoz ==='поражение техническим электричеством' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/electroF')
+      history.push('/electroF')
     }
     else if (dataForm.diagnoz ==='одиночное огнестрельное ранение груди' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/ognestrelTorax1M')
+      history.push('/ognestrelTorax1M')
     }
     else if (dataForm.diagnoz ==='одиночное огнестрельное ранение груди' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/ognestrelTorax1F')
+      history.push('/ognestrelTorax1F')
     }
     else if (dataForm.diagnoz ==='множественные огнестрельные ранения груди' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/ognestrelToraxManyM')
+      history.push('/ognestrelToraxManyM')
     }
     else if (dataForm.diagnoz ==='множественные огнестрельные ранения груди' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/ognestrelToraxManyF')
+      history.push('/ognestrelToraxManyF')
     }
     else if (dataForm.diagnoz ==='одиночное огнестрельное ранение головы' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/ognestrelHeadM')
+      history.push('/ognestrelHeadM')
     }
     else if (dataForm.diagnoz ==='одиночное огнестрельное ранение головы' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/ognestrelHeadF')
+      history.push('/ognestrelHeadF')
     }
     else if (dataForm.diagnoz ==='тромбофлебит глубоких вен н/к, ТЭЛА' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/tromboflebitM')
+      history.push('/tromboflebitM')
     }
     else if (dataForm.diagnoz ==='тромбофлебит глубоких вен н/к, ТЭЛА' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/tromboflebitF')
+      history.push('/tromboflebitF')
     }
     else if (dataForm.diagnoz ==='автомобильная травма (пешеход)' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/autoPeshM')
+      history.push('/autoPeshM')
     }
     else if (dataForm.diagnoz ==='автомобильная травма (пешеход)' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/autoPeshF')
+      history.push('/autoPeshF')
     }
     else if (dataForm.diagnoz ==='автомобильная травма (водитель)' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/autoVoditM')
+      history.push('/autoVoditM')
     }
     else if (dataForm.diagnoz ==='автомобильная травма (водитель)' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/autoVoditF')
+      history.push('/autoVoditF')
     }
     else if (dataForm.diagnoz ==='автомобильная травма (пассажир)' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/autoPasM')
+      history.push('/autoPasM')
     }
     else if (dataForm.diagnoz ==='автомобильная травма (пассажир)' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/autoPasF')
+      history.push('/autoPasF')
     }
     else if (dataForm.diagnoz ==='колото-резаное ранение груди' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/colotoRezM')
+      history.push('/colotoRezM')
     }
     else if (dataForm.diagnoz ==='колото-резаное ранение груди' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/colotoRezF')
+      history.push('/colotoRezF')
     }
     else if (dataForm.diagnoz ==='утопление в воде' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/utoplenieM')
+      history.push('/utoplenieM')
     }
     else if (dataForm.diagnoz ==='утопление в воде' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/utoplenieF')
+      history.push('/utoplenieF')
     }
     else if (dataForm.diagnoz ==='тупая травма живота' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/tupajaZhivotaM')
+      history.push('/tupajaZhivotaM')
     }
     else if (dataForm.diagnoz ==='тупая травма живота' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/tupajaZhivotaF')
+      history.push('/tupajaZhivotaF')
     }
     else if (dataForm.diagnoz ==='термические ожоги + отравление СО' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/ozhogyM')
+      history.push('/ozhogyM')
     }
     else if (dataForm.diagnoz ==='термические ожоги + отравление СО' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/ozhogyF')
+      history.push('/ozhogyF')
     }
     else if (dataForm.diagnoz ==='падение с высоты + переохлаждение' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/katatravmaM')
+      history.push('/katatravmaM')
     }
     else if (dataForm.diagnoz ==='падение с высоты + переохлаждение' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/katatravmaF')
+      history.push('/katatravmaF')
     }
     else if (dataForm.diagnoz ==='авиационная травма' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/aviatravmaM')
+      history.push('/aviatravmaM')
     }
     else if (dataForm.diagnoz ==='авиационная травма' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/aviatravmaF')
+      history.push('/aviatravmaF')
     }
     else if (dataForm.diagnoz ==='рак предстательной железы' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/rakProstatyM')
+      history.push('/rakProstatyM')
     }
     else if (dataForm.diagnoz ==='рак предстательной железы' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/rakProstatyF')
+      history.push('/rakProstatyF')
     }
     else if (dataForm.diagnoz ==='другие варианты ненасильственной смерти' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/patanF')
+      history.push('/patanF')
     }
     else if (dataForm.diagnoz ==='другие варианты ненасильственной смерти' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/patanM')
+      history.push('/patanM')
     }
     else if (dataForm.diagnoz ==='смэ основное' && dataForm.sex === 'мужской'){
-      history.push('/chernDuble/sudebM')
+      history.push('/sudebM')
     }
     else if (dataForm.diagnoz ==='смэ основное' && dataForm.sex === 'женский'){
-      history.push('/chernDuble/sudebF')
+      history.push('/sudebF')
     }
     // else if (dataForm.diagnoz ==='ИБС Внезапная коронарная смерть' && dataForm.sex === 'мужской'){
     //   history.push('/ibsVksExp')
@@ -364,7 +364,7 @@ const App = () => {
     // else if (dataForm.diagnoz ==='эксперимент' && dataForm.sex === 'мужской'){
     //   history.push('/experiment')
     // }
-    else{history.push('/chernDuble/inJob')}
+    else{history.push('/inJob')}
   }
   //Конечный вариант функции сохранения
   const generateDocument = async () => {
@@ -513,7 +513,7 @@ const App = () => {
 
     return (
     <>
-    {/* <BrowserRouter basename="/chernDuble"> */}
+    {/* <BrowserRouter basename=""> */}
     <HelmetProvider>
     <Suspense fallback={<div>Загрузка...</div>}>
 <Switch>
