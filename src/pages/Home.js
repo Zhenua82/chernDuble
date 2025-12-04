@@ -37,6 +37,7 @@ function Home() {
                 </div>         
             </div> */}
             <h1 className={styles.h1Home}>Конструктор заключений по судебно-медицинской экспертизе (исследованию) трупа</h1>
+            <h2 style={{color:'red'}}>Черновик!!!!!!!!!!</h2>
             <img src={imgSlide11} alt="Экспертиза трупа" className={styles.imgHome} width="1811" height="1018"/>
             <NavLink className={styles.link} to='/search'><button className={styles.btnHome}>Начать работу</button></NavLink>
             <img src={imgSlide2} alt="Исследование трупа" className={styles.imgHome} width="1811" height="1018"/>
