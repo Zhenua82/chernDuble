@@ -164,7 +164,10 @@ function Popup() {
 
         // Установка в localStorage url текущей страницы:
         // localStorage.setItem('url', window.location.href);
-        localStorage.setItem('url', window.location.pathname);
+
+        // localStorage.setItem('url', window.location.pathname);//без HashRouter
+        localStorage.setItem('url', window.location.hash.replace('#', ''));// c HashRouter
+
 
         // Установка в localStorage данных хранилища текущей страницы:
 
